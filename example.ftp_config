@@ -1,0 +1,4 @@
+HOST=example.com
+USER=user
+PASS=password
+TARGET_FOLDER=/path/to/deploy

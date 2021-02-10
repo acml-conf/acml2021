@@ -45,3 +45,18 @@ docker run --rm -p 4000:4000 -v $(pwd):/srv/jekyll acml2021/website
 ## Deployment
 
 Jekyll builds the website at ``_site``. Thus, we just need to push the content to the server and we are done.
+
+### Deployment Script
+
+On Linux and macOS, deployment of the website can also be done automatically using ``deploy.sh`` script.
+
+#### Setup
+
+1. Install ``lftp``: 
+	* Linux: ``sudo apt install lftp``  
+	* macOS: ``brew install lftp``
+2. Set the FTP details and target deployment in ``.ftp_config``. An example of the configuration is given in  ``example.ftp_config``.
+
+#### Deploy
+
+Execute: ``./deploy.sh``. This will synchronize the latest changes made by Jekyll to the server.
