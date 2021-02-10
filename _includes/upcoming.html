@@ -1,0 +1,41 @@
+<h3>Upcoming</h3>
+{% if site.data.tracks %}
+	{% for track_hash in site.data.tracks %}
+		{% assign track = track_hash[1] %}
+		{% assign sorted_dates = track.dates | sort: "date" %}
+		{% for d in sorted_dates %}
+		<p class="countdown notice--primary" data-event-track="{{ track.name }}" data-event-name="{{ d.name }}" data-event-date="{{ d.date }}">
+			<small>{{ track.name | upcase }}</small><br>
+			<b>{{ d.name | markdownify | remove: '<p>' | remove: '</p>' }}</b><br>
+			<span data-event-date="{{ d.date }}">{% if d.date_start %}{{ d.date_start | date: "%-d %B"}} - {%endif%}{{ d.date | date_to_long_string }}</span>
+		</p>
+		{% endfor %}
+	{% endfor %}
+
+	<script id="upcoming_tracks" type="application/json">
+	{{ site.data.tracks | jsonify }}
+	</script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			var tracks = JSON.parse(document.getElementById("upcoming_tracks").innerHTML);
+		   	var dates = split_dates(tracks);
+
+		   	// Remove irrelevant timing
+			for (var i = 0; i < dates['expired'].length; i++) {
+				get_event_elem('.countdown', dates['expired'][i]).remove();
+			}	
+			for (var i = 0; i < dates['future'].length; i++) {
+				get_event_elem('.countdown', dates['future'][i]).remove();
+			}	
+
+			// Assign countdowns
+			elems = document.querySelectorAll('.countdown span');
+			for (var i = 0; i < elems.length; i++) {
+				el = elems[i];
+				CountDownTimer(el.getAttribute('data-event-date'), el);
+			}
+		}, false);
+	</script>
+{% else %}
+   <p>TBA</p>
+{% endif %}

@@ -1,0 +1,16 @@
+{% assign sorted_news = site.data.news | sort: "date" | reverse %}
+
+{% if include.max_items %}
+	{% assign sorted_news = sorted_news | slice: 0, include.max_items %}
+{% endif %}
+
+{% for n in sorted_news %}
+<p class="notice{% if n.type %}--{{n.type}}{%endif%}">
+	<small><b>{{ n.date | date: "%B %-d, %Y" }}</b></small><br>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}
+</p>
+{% endfor %}
+
+{% if include.max_items < site.data.news.size %}
+{% assign more_count = site.data.news.size | minus: include.max_items %}
+<a href="/news/" class="btn btn--primary">Older News ({{ more_count }})</a>
+{% endif %}

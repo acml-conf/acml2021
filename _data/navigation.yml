@@ -1,0 +1,37 @@
+main:
+  - title: "News"
+    url: /news/
+  - title: "Calls"
+    url: /calls/papers/
+  - title: "Program"
+    url: /program/
+  - title: "Conference"
+    url: /conference/accepted-papers/
+  - title: "Tutorial"
+    url: /tutorial/
+  - title: "Workshop"
+    url: /workshop/
+  - title: "Misc"
+    url: /misc/
+  - title: "Contact"
+    url: /contact/
+
+calls:
+  - title: "Call For"
+    children:
+    - title: "Papers"
+      url: /calls/papers/
+    - title: "Tutorials"
+      url: /calls/tutorials/
+    - title: "Workshops"
+      url: /calls/workshops/
+
+conference:
+  - title: "Conference"
+    children:
+    - title: "Accepted Papers"
+      url: /conference/accepted-papers/
+    - title: "Invited Speakers"
+      url: /conference/invited-speakers/
+    - title: "Awards"
+      url: /conference/awards/

@@ -1,0 +1,139 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+name: ACML
+title: ACML 2021
+subtitle: "The 13th Asian Conference on Machine Learning"
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  The Asian Conference on Machine Learning (ACML) is an international conference in the area of machine learning. It aims at providing a leading international forum for researchers in Machine Learning and related fields to share their new ideas and achievements.
+baseurl: "/2021" # the subpath of your site, e.g. /blog
+url: "http://www.acml-conf.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: acml-conf
+github_username:  acml-conf
+
+# Build settings
+# theme: minima
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-feed
+
+include: ["_pages"]
+
+timezone: Etc/GMT+12
+
+
+###################################################
+# MINIMAL MISTAKES
+###################################################
+
+minimal_mistakes_skin: "default"
+
+logo: "/assets/images/acml-logo.png"
+og_image: "/assets/images/acml-logo.png"
+masthead_title: ACML 2021
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/acml-conf/acml2021"
+
+atom_feed:
+  hide: true
+
+search: false
+# paginate: 5
+
+after_footer_scripts:
+  - /assets/js/custom.js
+
+
+###################################################
+# EXTRAS
+###################################################
+
+org_url: http://www.acml-conf.org/
+favicon_path: '/assets/images/favicons/'
+
+
+###################################################
+# DEFAULTS
+###################################################
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      show_date: true
+      read_time: true
+      comments: false
+      share: true
+      related: false
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+  # _pages/calls
+  - scope:
+      path: "_pages/calls"
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      toc_sidebar: true
+      sidebar:
+        nav: "calls"
+  # _pages/conference
+  - scope:
+      path: "_pages/conference"
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      sidebar:
+        nav: "conference"
+        
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

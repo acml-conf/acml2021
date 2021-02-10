@@ -1,0 +1,44 @@
+{% assign track = include.track %}
+<div style="overflow-x:auto;"> <!-- Responsive table -->
+	<table>
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Event</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% assign sorted_dates = track.dates | sort: "date" %}
+			{% for d in sorted_dates %}
+			<tr class="date" data-event-track="{{ track.name }}" data-event-name="{{ d.name }}" data-event-date="{{ d.date }}">
+				<td>
+					{% if d.date_start %}{{ d.date_start | date: "%-d %B"}} - {%endif%}{{ d.date | date_to_long_string }}
+				</td>
+				<td>
+					{{ d.name | markdownify | remove: '<p>' | remove: '</p>' }}
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+
+<script id="track_events_{{ track.name | slugify }}" type="application/json">
+{{ track | jsonify }}
+</script>
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function() {
+		var value = JSON.parse(document.getElementById("track_events_{{ track.name | slugify }}").innerHTML);
+		var tracks = { "{{ track.name }}": value };
+	   	var dates = split_dates(tracks);
+	
+		// Strikethrough expired row
+		for (var i = 0; i < dates['expired'].length; i++) {
+			get_event_elem('.date', dates['expired'][i]).setAttribute("style", "color: gray;text-decoration: line-through;");
+		}	
+		// Bold current row
+		for (var i = 0; i < dates['current'].length; i++) {
+			get_event_elem('.date', dates['current'][i]).setAttribute("style", "font-weight:bold;");
+		}
+	}, false);
+</script>

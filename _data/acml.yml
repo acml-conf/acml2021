@@ -1,0 +1,10 @@
+deadline: Deadlines are 23:59 [UTC-12](https://www.timeanddate.com/time/zone/timezone/utc-12) ("anywhere on Earth").
+submission:
+  cmt: https://cmt3.research.microsoft.com/ACML2021
+  mach: https://www.editorialmanager.com/mach
+conference:
+  name: Proceedings of Machine Learning Research (PMLR) 
+  url: http://proceedings.mlr.press/
+journal:
+  name: Springer journal Machine Learning 
+  url: https://www.springer.com/computer/ai/journal/10994
