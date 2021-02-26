@@ -1,19 +1,25 @@
 <h3>Upcoming</h3>
 {% if site.data.tracks %}
-	{% for track_hash in site.data.tracks %}
-		{% assign track = track_hash[1] %}
+	
+	{% assign tracks = "" | split: "" %}
+	{% for track in site.data.tracks %}
+	  {% assign tracks = tracks | push: track[1] %}
+	{% endfor %}
+	{% assign tracks = tracks | sort: "id" %}
+
+	{% for track in tracks %}
 		{% assign sorted_dates = track.dates | sort: "date" %}
 		{% for d in sorted_dates %}
-		<p class="countdown notice--primary" data-event-track="{{ track.name }}" data-event-name="{{ d.name }}" data-event-date="{{ d.date }}">
+		<p class="countdown notice--primary" data-event-track="{{ track.name }}" data-event-name="{{ d.name }}" data-event-date="{{ d.date | date_to_xmlschema }}">
 			<small>{{ track.name | upcase }}</small><br>
 			<b>{{ d.name | markdownify | remove: '<p>' | remove: '</p>' }}</b><br>
-			<span data-event-date="{{ d.date }}">{% if d.date_start %}{{ d.date_start | date: "%-d %B"}} - {%endif%}{{ d.date | date_to_long_string }}</span>
+			<span data-event-date="{{ d.date | date_to_xmlschema }}">{% if d.date_start %}{{ d.date_start | date: "%-d %B"}} - {%endif%}{{ d.date | date_to_long_string }}</span>
 		</p>
 		{% endfor %}
 	{% endfor %}
 
 	<script id="upcoming_tracks" type="application/json">
-	{{ site.data.tracks | jsonify }}
+	{{ site.data.tracks | jsonify_tz }}
 	</script>
 	<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function() {

@@ -2,3 +2,6 @@ HOST=example.com
 USER=user
 PASS=password
 TARGET_FOLDER=/path/to/deploy
+PASSIVE_MODE=on
+VERIFY_CERT=true
+BUILD_ENV=production

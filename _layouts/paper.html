@@ -1,0 +1,28 @@
+---
+layout: single
+classes: wide
+sidebar:
+  nav: "conference"
+comments: true
+---
+
+<b>{{ page.authors }}</b>{% if page.affiliation %} - {{ page.affiliation }}{% endif %}
+<hr>
+{% include video id=page.video_id provider="youtube" %}
+
+{% if page.pdf %}
+<a href="{{ page.pdf }}" class="btn btn--info">Download PDF</a>
+{% elsif page.paper_id %}
+<a href="{{ page.paper_id | prepend: site.data.acml.conference.volume_url }}" class="btn btn--info">PMLR Page</a>
+{% endif %}
+
+<h2>Abstract</h2>
+{{ page.abstract }}
+
+{% if page.bio %}
+<h2>Biography</h2>
+{% if page.photo %}
+<img src="{{ page.photo | prepend:'/assets/images/speakers/' | relative_url }}" alt="image-left" class="align-left" style="max-width: 150px">
+{% endif %}
+{{ page.bio }}
+{% endif %}

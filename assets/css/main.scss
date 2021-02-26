@@ -52,12 +52,22 @@ script {
 
     li {
         padding: 0px;
+        text-transform: none;
     }
 
     a {
         padding-right: 0px;
-        font-weight: bold;
+        text-transform: none;
+        font-weight: normal;
+
+        i {
+            margin-right: 2px;
+        }
     }
+}
+
+.page__footer .fab {
+    color: #3d4144;
 }
 
 .page__footer footer {
@@ -70,4 +80,42 @@ script {
 
 .page__content {
     @include word-wrap;
+}
+
+.utterances {
+    max-width: none;
+}
+
+.wide .page.nosidebar {
+    margin: auto;
+    float: none;
+}
+
+.masthead__menu {
+    ul.dropdown {
+        position: absolute;
+        padding: 15px 0px;
+        border: 1px solid #f2f3f3;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 #b6b6b63b, 0 2px 10px 0 #b6b6b63b;
+    }
+
+    .hidden-links {
+        .masthead__menu-item {
+            ul.dropdown {
+                position: inherit;
+                padding: inherit;
+            }
+        }
+    }
+}
+
+.hidden-links {
+    .masthead__menu {
+        ul.dropdown {
+            position: inherit;
+            padding: inherit;
+        }
+    }
 }

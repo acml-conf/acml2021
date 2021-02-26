@@ -16,7 +16,7 @@ This requires the installation of Ruby and various dependencies. We recommend th
 
 1. Install Bundler: ``gem install bundler``.
 2. Clone this repository and open the cloned folder.
-3. Install the required gems: ``sudo bundle install``.
+3. Install the required gems: ``bundle install``.
 4. Start the Jekyll server (with live reload): ``bundle exec jekyll serve --livereload``
 5. The website should be available at <http://localhost:4000/2021/>
 
@@ -56,7 +56,8 @@ On Linux and macOS, deployment of the website can also be done automatically usi
 	* Linux: ``sudo apt install lftp``  
 	* macOS: ``brew install lftp``
 2. Set the FTP details and target deployment in ``.ftp_config``. An example of the configuration is given in  ``example.ftp_config``.
+3. Multiple configuration of deployments are supported by writing different ``.ftp_config-<SERVER>``. For example, you can write your staging server deployment configuration in ``.ftp_config-staging``.
 
 #### Deploy
 
-Execute: ``./deploy.sh``. This will synchronize the latest changes made by Jekyll to the server.
+Execute: ``./deploy.sh``. This will build the website and synchronize the latest changes made by Jekyll to the server. Following the example of staging configuration, you can execute ``./deploy.sh staging`` to deploy to the staging server.

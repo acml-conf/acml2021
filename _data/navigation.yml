@@ -2,15 +2,15 @@ main:
   - title: "News"
     url: /news/
   - title: "Calls"
-    url: /calls/papers/
+    sublinks: 'calls'
   - title: "Program"
     url: /program/
   - title: "Conference"
-    url: /conference/accepted-papers/
+    sublinks: 'conference'
   - title: "Tutorial"
-    url: /tutorial/
+    url: /tutorials/
   - title: "Workshop"
-    url: /workshop/
+    url: /workshops/
   - title: "Misc"
     url: /misc/
   - title: "Contact"
@@ -25,6 +25,8 @@ calls:
       url: /calls/tutorials/
     - title: "Workshops"
       url: /calls/workshops/
+    - title: "Nominations"
+      url: /calls/nominations/
 
 conference:
   - title: "Conference"

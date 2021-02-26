@@ -1,0 +1,14 @@
+<div class="speakers">
+{% if site.data.speakers %}
+	{% for paper in site.data.speakers %}
+		<h2>
+			<a href="{{ paper.authors | slugify }}">{{ paper.title }}</a><br>
+			<small><b>{{ paper.authors }}</b> - {{ paper.affiliation }}</small>
+		</h2>
+		<img src="{{ paper.photo | prepend:'/assets/images/speakers/' | relative_url }}" alt="image-left" class="align-left" style="max-width: 150px">
+		{{ paper.abstract }}<br>
+	{% endfor %}
+{% else %}
+   <p>Under Construction</p>
+{% endif %}
+</div>

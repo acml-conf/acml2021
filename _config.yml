@@ -36,8 +36,9 @@ plugins:
   - jekyll-feed
 
 include: ["_pages"]
+exclude: ["README.md", "LICENSE.md", "Dockerfile", "example.ftp_config", "deploy.sh"]
 
-timezone: Etc/GMT+12
+timezone: America/Los_Angeles
 
 
 ###################################################
@@ -65,6 +66,20 @@ search: false
 after_footer_scripts:
   - /assets/js/custom.js
 
+repository: acml-conf/acml2021
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-08YTPYMEVR"
+    anonymize_ip: false # default
+
 
 ###################################################
 # EXTRAS
@@ -72,6 +87,35 @@ after_footer_scripts:
 
 org_url: http://www.acml-conf.org/
 favicon_path: '/assets/images/favicons/'
+
+
+###################################################
+# DATAPAGE GEN
+###################################################
+
+page_gen-dirs: true
+
+page_gen:
+# _data/papers/conference
+- data: 'papers.conference'
+  template: 'paper/conference'
+  name: 'paper_id'
+  dir: 'conference/accepted-papers'
+# _data/papers/journal
+- data: 'papers.journal'
+  template: 'paper/conference'
+  name: 'paper_id'
+  dir: 'conference/accepted-papers'
+# _data/speakers
+- data: 'speakers'
+  template: 'paper/conference'
+  name: 'authors'
+  dir: 'conference/invited-speakers'
+# _data/tutorials
+- data: 'tutorials'
+  template: 'paper/tutorial'
+  name: 'authors'
+  dir: 'tutorials'
 
 
 ###################################################
@@ -102,7 +146,6 @@ defaults:
       path: "_pages/calls"
       type: pages
     values:
-      layout: single
       classes: wide
       toc_sidebar: true
       sidebar:
@@ -112,7 +155,6 @@ defaults:
       path: "_pages/conference"
       type: pages
     values:
-      layout: single
       classes: wide
       sidebar:
         nav: "conference"

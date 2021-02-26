@@ -1,0 +1,17 @@
+name: Journal Track
+id: 1
+dates:
+- date: '2021-05-14 23:59:59'
+  name: Submission Deadline
+  
+- date: '2021-06-30 23:59:59'
+  name: 1st Round Review Results (accept, minor revision, or reject)
+
+- date: '2021-08-13 23:59:59'
+  name: Revised Manuscript Submission Deadline
+
+- date: '2021-09-17 23:59:59'
+  name: Notification
+
+- date: '2021-10-15 23:59:59'
+  name: Camera-Ready Submission Deadline

@@ -10,7 +10,7 @@
 		<tbody>
 			{% assign sorted_dates = track.dates | sort: "date" %}
 			{% for d in sorted_dates %}
-			<tr class="date" data-event-track="{{ track.name }}" data-event-name="{{ d.name }}" data-event-date="{{ d.date }}">
+			<tr class="date" data-event-track="{{ track.name }}" data-event-name="{{ d.name }}" data-event-date="{{ d.date | date_to_xmlschema }}">
 				<td>
 					{% if d.date_start %}{{ d.date_start | date: "%-d %B"}} - {%endif%}{{ d.date | date_to_long_string }}
 				</td>
@@ -24,7 +24,7 @@
 </div>
 
 <script id="track_events_{{ track.name | slugify }}" type="application/json">
-{{ track | jsonify }}
+{{ track | jsonify_tz }}
 </script>
 <script type="text/javascript">
 	document.addEventListener('DOMContentLoaded', function() {

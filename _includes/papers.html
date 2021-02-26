@@ -1,0 +1,35 @@
+<div class="papers">
+{% if site.data.papers %}
+	<input type="text" id="paper-filter" onkeyup="filter_papers()" placeholder="Search for papers.." title="Type in a name or keyword">
+   	{% for track_hash in site.data.papers %}
+		{% assign track_name = track_hash[0] %}
+		{% assign papers = track_hash[1] %}
+		<h2>{{ track_name | capitalize }}</h2>
+		{% include track_papers.html papers=papers %}
+	{% endfor %}
+{% else %}
+   <p>Under Construction</p>
+{% endif %}
+</div>
+
+<script type="text/javascript">
+function filter_papers() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("paper-filter");
+    filter = input.value.toUpperCase();
+    ul_list = document.getElementsByClassName("paper-list");
+    for (i = 0; i < ul_list.length; i++) {
+    	ul = ul_list[i];
+	    li = ul.getElementsByTagName("li");
+	    for (j = 0; j < li.length; j++) {
+	        a = li[j].getElementsByTagName("a")[0];
+	        txtValue = a.textContent || a.innerText;
+	        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+	            li[j].style.display = "";
+	        } else {
+	            li[j].style.display = "none";
+	        }
+	    }
+	}
+}
+</script>

@@ -1,6 +1,6 @@
 ---
-permalink: /tutorial/
-title: Tutorial
+permalink: /tutorials/
+title: Tutorials
 ---
 
-Under Construction
+{% include track_papers.html papers=site.data.tutorials %}

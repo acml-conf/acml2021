@@ -76,3 +76,22 @@ function CountDownTimer(dt, el, show_second=false)
     timer = setInterval(showRemaining, refresh_rate);
     showRemaining();
 }
+
+document.addEventListener('click', function(e) {
+    e = e || window.event;
+    var target = e.target;
+    var dropdown = null;
+    try {
+        var dropdown = e.target.closest("li").querySelector('.dropdown');
+    } catch {}
+    
+    var allDropdowns = document.querySelectorAll('.dropdown');
+    for (var i = 0; i < allDropdowns.length; i++) {
+        if(allDropdowns[i] == dropdown) continue;
+        allDropdowns[i].classList.add("hidden");
+    }
+
+    if(dropdown != null){
+        dropdown.classList.toggle('hidden');
+    }
+}, false);

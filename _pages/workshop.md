@@ -1,6 +1,6 @@
 ---
-permalink: /workshop/
-title: Workshop
+permalink: /workshops/
+title: Workshops
 ---
 
 Under Construction
