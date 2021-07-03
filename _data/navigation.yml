@@ -7,12 +7,16 @@ main:
     url: /program/
   - title: "Conference"
     sublinks: 'conference'
+  - title: "School"
+    sublinks: 'oamls'
   - title: "Tutorial"
     url: /tutorials/
   - title: "Workshop"
     url: /workshops/
+  - title: "Organization"
+    sublinks: 'organization'
   - title: "Misc"
-    url: /misc/
+    sublinks: 'misc'
   - title: "Contact"
     url: /contact/
 
@@ -37,3 +41,25 @@ conference:
       url: /conference/invited-speakers/
     - title: "Awards"
       url: /conference/awards/
+
+organization:
+  - title: "organization"
+    children:
+    - title: "ACML 2021 Committees"
+      url: /committees/
+    - title: "Steering Committees"
+      url: http://acml-conf.org/Committee.ashx
+
+misc:
+  - title: "Misc"
+    children:
+    - title: "Past Conferences"
+      url: http://acml-conf.org/
+
+oamls:
+  - title: "School"
+    children:
+    - title: "Home"
+      url: /school/
+    - title: "Speakers"
+      url: /school/speakers/

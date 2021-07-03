@@ -1,0 +1,54 @@
+- name: Taiji Suzuki
+  desc: RIKEN Center for Advanced Intelligence Project/The University of Tokyo
+  photo: taiji-suzuki.jpg
+  url: http://ibis.t.u-tokyo.ac.jp/suzuki/
+
+- name: Emtiyaz Khan
+  desc: RIKEN Center for Advanced Intelligence Project
+  photo: emtiyaz-khan.jpg
+  url: https://emtiyaz.github.io/
+
+- name: Angela Yao
+  desc: National University of Singapore
+  photo: angela-yao.jpg
+  url: https://www.comp.nus.edu.sg/~ayao/
+
+- name: Sinno Pan
+  desc: Nanyang Technological University
+  photo: sinno-pan.jpg
+  url: https://personal.ntu.edu.sg/sinnopan/
+
+- name: Sara Hooker
+  desc: Google Brain
+  photo: sara-hooker.jpg
+  url: https://www.sarahooker.me/
+
+- name: Vered Shwartz
+  desc: University of British Columbia
+  photo: vered-shwartz.jpg
+  url: https://vered1986.github.io/
+
+- name: Peter Bartlett
+  desc: University of California Berkeley
+  photo: peter-bartlett.jpg
+  url: https://www.stat.berkeley.edu/~bartlett/
+
+- name: Hung-yi Lee
+  desc: National Taiwan University
+  photo: hung-yi-lee.jpg
+  url: https://speech.ee.ntu.edu.tw/~hylee/
+
+- name: Dinh Phung
+  desc: Monash University
+  photo: dinh-phung.jpg
+  url: http://dinhphung.ml/?i=1
+    
+- name: Reza Haffari
+  desc: Monash University
+  photo: reza-haffari.jpg
+  url: https://users.monash.edu.au/~gholamrh/
+    
+- name: Cheng Soon Ong
+  desc: Data61, CSIRO
+  photo: cheng-soon-ong.jpg
+  url: http://www.ong-home.my/

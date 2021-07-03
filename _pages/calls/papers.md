@@ -3,6 +3,9 @@ permalink: /calls/papers/
 title: Call for Papers
 ---
 
+{: .notice}
+The conference track submission deadline has been extended by one week to provide more time for those affected by the Covid situation.
+
 The conference calls for high-quality, original research papers in the theory and practice of machine learning. The conference also solicits proposals focusing on frontier research, new ideas and paradigms in machine learning. We encourage submissions from all parts of the world, not only confined to the Asia-Pacific region.
 
 ## Submission
@@ -17,13 +20,17 @@ This year we are running **two publication tracks**: Authors may submit either t
 For the conference track please submit your manuscript via CMT at:
 <{{ site.data.acml.submission.cmt }}>
 
+CMT will open one month before the deadline, i.e. on 25 May, for the conference track.
+
 When creating a new submission on CMT, please make sure to [choose "Conference" track]({{site.baseurl}}/assets/images/AuthorConsole-screenshot.png).
 
 Manuscripts must be written in English, be a maximum of 16 pages (including references, appendices etc.) and follow the PMLR style. If required, supplementary material may be submitted as a separate file, but reviewers are not obliged to consider this.
 
-Latex template and style files will be provided at a later date.
+The Latex template and style file can be found here: [ACML2021-PMLR-template.zip]({{site.baseurl}}/downloads/ACML2021-PMLR-template.zip).
 
 All conference track submissions **must be anonymized**. Submissions that are not anonymized, over-length, or not in the correct format will be rejected without review. It is not appropriate to submit papers that are substantially similar to versions that have been previously published, or accepted for publication, or that have been submitted in parallel to other conferences or journals. However, submission is permitted for papers presented or to be presented at conferences or workshops without proceedings, or with only abstracts published. Also, submission is permitted for papers that are available as a technical report (e.g. in arXiv) as long as it is not cited in the submission.
+
+After the acceptance notification, we plan to invite some of the selected authors to submit their extended papers to the Topical Issue in [Springer Nature Computer Science](https://www.springer.com/journal/42979?detailsPage=societies).
 
 ## Journal Track
 **Submission Deadline: May 14**
@@ -55,3 +62,71 @@ Journal track review is **single-blind**, i.e., the authors identity will be vis
 
 ### Journal Track
 {% include track_events.html track=site.data.tracks.journal %}
+
+## Topics
+Topics of interest include but are not limited to:
+
+* General machine learning 
+  * Active learning
+  * Bayesian machine learning
+  * Dimensionality reduction
+  * Feature selection
+  * Graphical models
+  * Imitation Learning
+  * Latent variable models
+  * Learning for big data
+  * Learning from noisy supervision
+  * Learning in graphs
+  * Multi-objective learning
+  * Multiple instance learning
+  * Multi-task learning
+  * Online learning
+  * Optimization
+  * Reinforcement learning
+  * Relational learning
+  * Semi-supervised learning
+  * Sparse learning
+  * Structured output learning
+  * Supervised learning
+  * Transfer learning
+  * Unsupervised learning
+  * Other machine learning methodologies
+
+* Deep learning
+  * Attention mechanism and transformers
+  * Deep learning theory
+  * Generative models
+  * Deep reinforcement learning
+  * Architectures
+  * Other topics in deep learning
+
+* Theory
+  * Computational learning theory
+  * Optimization (convex, non-convex)
+  * Reproducible research
+  * Bandits
+  * Statistical learning theory
+  * Other theories
+
+* Trustworthy Machine Learning
+  * Accountability/Explainability/Transparency
+  * Causality
+  * Fairness
+  * Privacy
+  * Robustness
+  * Other topics in trustworthy ML
+
+* Applications
+  * Bioinformatics
+  * Biomedical informatics
+  * Collaborative filtering
+  * Computer vision
+  * COVID-19 related research
+  * Healthcare
+  * Human activity recognition
+  * Information retrieval
+  * Natural language processing
+  * Social networks
+  * Web search
+  * Climate science
+  * Other applications

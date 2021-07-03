@@ -12,5 +12,5 @@
 
 {% if include.max_items < site.data.news.size %}
 {% assign more_count = site.data.news.size | minus: include.max_items %}
-<a href="/news/" class="btn btn--primary">Older News ({{ more_count }})</a>
+<a href="{{ '/news/' | relative_url }}" class="btn btn--primary">Older News ({{ more_count }})</a>
 {% endif %}

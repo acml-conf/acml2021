@@ -1,0 +1,51 @@
+<div class="speakers">
+{% if site.data.oamls.speakers %}
+	{% if include.per_page %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
+	{% endif %}
+
+	<div class="oamls-speakers splide{% unless include.per_page %} no-carousel{% endunless %}">
+		<div class="splide__track">
+			<ul class="splide__list">
+			{% assign sorted_speakers = site.data.oamls.speakers | sort: "name" %}
+			{% for speaker in sorted_speakers %}<li class="splide__slide">
+					<a href="{{ speaker.url }}" class="oamls-speaker">
+						<div class="speaker-photo">
+							<img src="{{ speaker.photo | prepend:'/assets/images/oamls/speakers/' | relative_url }}">
+						</div>
+						<div class="speaker-info">
+							<div class="speaker-name">{{ speaker.name }}</div>
+							<div class="speaker-desc">{{ speaker.desc }}</div>
+						</div>
+					</a>
+				</li>{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	{% if include.per_page %}
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
+	<script>
+		document.addEventListener( 'DOMContentLoaded', function () {
+			new Splide( '.splide', {
+				type   : 'loop',
+				perPage: {{ include.per_page }},
+				pagination: false,
+				breakpoints: {
+					'640': {
+						perPage: 2,
+					},
+					'480': {
+						perPage: 1,
+					},
+				}
+			} ).mount();
+		} );
+	</script>
+	{% endif %}
+
+{% else %}
+   <p>Under Construction</p>
+{% endif %}
+</div>

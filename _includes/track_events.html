@@ -12,6 +12,7 @@
 			{% for d in sorted_dates %}
 			<tr class="date" data-event-track="{{ track.name }}" data-event-name="{{ d.name }}" data-event-date="{{ d.date | date_to_xmlschema }}">
 				<td>
+					{% if d.date_prev %}<s>{% if d.date_start_prev %}{{ d.date_start_prev | date: "%-d %B"}} - {%endif%}{{ d.date_prev | date_to_long_string }}</s>{%endif%} 
 					{% if d.date_start %}{{ d.date_start | date: "%-d %B"}} - {%endif%}{{ d.date | date_to_long_string }}
 				</td>
 				<td>

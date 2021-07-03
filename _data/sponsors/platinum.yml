@@ -1,0 +1,9 @@
+- name: SEA
+  url: https://www.sea.com/home
+  image: SEA.png
+- name: DeepMind
+  url: https://deepmind.com/
+  image: deepmind.png
+- name: Google
+  url: https://research.google/
+  image: google-research.png

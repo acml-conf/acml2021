@@ -1,0 +1,14 @@
+name: Tutorial
+id: 0
+dates:
+- date: '2021-07-30 23:59:59'
+  name: Tutorial proposals due
+
+- date: '2021-08-13 23:59:59'
+  name: Acceptance Notification
+
+- date: '2021-10-18 23:59:59'
+  name: Tutorial materials and websites due
+
+- date: '2021-11-17 23:59:59'
+  name: ACML tutorials

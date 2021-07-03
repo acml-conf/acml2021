@@ -35,3 +35,9 @@ The conference calls for high-quality, original research papers in the theory an
 # Important Dates
 
 {% include events.html %}
+
+# Sponsors
+
+## Platinum Sponsors
+
+{% include sponsors.html category='platinum' %}
