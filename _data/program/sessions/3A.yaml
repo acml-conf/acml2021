@@ -1,0 +1,9 @@
+code: 3A
+title: Learning with Noisy Labels and Data
+papers:
+  - "Learning Maximum Margin Markov Networks from examples with missing labels"
+  - "QActor: Active Learning on Noisy Labels"
+  - "Robust Regression for Monocular Depth Estimation"
+  - "Improving Deep Label Noise Learning with Dual Active Label Correction"
+  - "A Two-Stage Training Framework with Feature-Label Matching Mechanism for Learning from Label Proportions"
+  - "ASD-Conv: Monocular 3D object detection network based on Asymmetrical Segmentation Depth-aware Convolution"

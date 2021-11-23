@@ -1,0 +1,10 @@
+code: 5C
+title: Deep Learning Theory
+papers:
+  - "Revisiting Weight Initialization of Deep Neural Networks"
+  - "Understanding How Over-Parametrization Leads to Acceleration: A case of learning a single teacher neuron"
+  - "Towards Interpreting Deep Neural Networks via Layer Behavior Understanding"
+  - "Ensembling With a Fixed Parameter Budget: When Does It Help and Why?"
+  - "Layer-Wise Neural Network Compression via Layer Fusion"
+  - "Multi-factor Memory Attentive Model for Knowledge Tracing"
+  - "SPDE-Net: Neural Network based prediction of stabilization parameter for SUPG technique"

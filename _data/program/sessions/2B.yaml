@@ -1,0 +1,11 @@
+code: 2B
+title: Natural Language Processing
+papers:
+  - "A Study of BERT for Context-Aware Neural Machine Translation"
+  - "End-to-End Entity-Aware Neural Machine Translation"
+  - "Cross-structural Factor-topic Model: Document Analysis with Sophisticated Covariates"
+  - "Solving Machine Learning Problems"
+  - "Relation Also Need Attention: Integrating Relation Information Into Image Captioning"
+  - "Semi-Open Attribute Extraction from Chinese Functional Description Text"
+  - "Bridging Code-Text Representation Gap using Explanation"
+  - "Hybrid Summarization with Semantic Weighting Reward and Latent Structure Detector"

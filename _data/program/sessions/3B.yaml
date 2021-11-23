@@ -1,0 +1,9 @@
+code: 3B
+title: Efficient Algorithms
+papers:
+  - "Iterative Deep Model Compression and Acceleration in the Frequency Domain"
+  - "Exploring the Common Principal Subspace of Deep Features in Neural Networks"
+  - "Collaborative Novelty Detection for Distributed Data by a Probabilistic Method"
+  - "Efficient Coreset Constructions via Sensitivity Sampling"
+  - "DPOQ: Dynamic Precision Onion Quantization"
+  - "Improving Hashing Algorithms for Similarity Search via MLE and the Control Variates Trick"

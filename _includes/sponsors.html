@@ -2,9 +2,12 @@
 {% assign sorted_sponsors = site.data.sponsors[include.category] | sort: "name" %}
 {% for sponsor in sorted_sponsors %}
 	{% if include.category == 'platinum' %}{% assign height = 5 %}{% endif %}
-	{% if include.category == 'gold' %}{% assign height = 4 %}{% endif %}
-	{% if include.category == 'silver' %}{% assign height = 3 %}{% endif %}
+	{% if include.category == 'gold' %}{% assign height = 3 %}{% endif %}
+	{% if include.category == 'silver' %}{% assign height = 1 %}{% endif %}
 	
-	<a href="{{ sponsor.url }}" target="_blank"><img alt="{{ sponsor.name }}" src="{{ sponsor.image | prepend:'/assets/images/sponsors/' | relative_url }}" alt="{{ sponsor.name }}" style="height:{{ height }}em;" /></a>
+	<div class="sponsor">
+		<a href="{{ sponsor.url }}" target="_blank"><img alt="{{ sponsor.name }}" src="{{ sponsor.image | prepend:'/assets/images/sponsors/' | relative_url }}" alt="{{ sponsor.name }}" style="height:{{ height }}em;" /></a>
+		<small>{% if sponsor.text %}{{ sponsor.text | markdownify }}{% else %}<p>&nbsp;</p>{% endif %}</small>
+	</div>
 {% endfor %}
 </div>

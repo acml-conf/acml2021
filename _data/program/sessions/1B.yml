@@ -1,0 +1,12 @@
+code: 1B
+title: Computer Vision
+papers:
+  - "Open Images V5 Text Annotation and Yet Another Mask Text Spotter"
+  - "Hierarchical Semantic Segmentation using Psychometric Learning"
+  - "Pedestrian Wind Comfort Estimation in Complex Urban Environments"
+  - "Spatial Temporal Enhanced Contrastive and Pretext Learning for Skeleton-based Action Representation"
+  - "Local Aggressive Adversarial Attacks on 3D Point Cloud"
+  - "Physics-inspired Learning for Structure-Aware Texture-Sensitive Underwater Image Enhancement"
+  - "Temporal Relation based Attentive Prototype Network for Few-shot Action Recognition"
+  - "Pyramid Correlation based Deep Hough Voting for Visual Object Tracking"
+  - "An Optimistic Acceleration of AMSGrad for Nonconvex Optimization"

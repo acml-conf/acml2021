@@ -1,0 +1,49 @@
+<div id='schedule'>
+{% if include.papers %}
+<ul id="paper-list" style="list-style: none; padding: 0px;">
+	{% for paper in include.papers %}
+	<li style="margin-bottom: 30px;">
+		{% if include.link %}
+			<a href="{{ paper.title | slugify }}"><b>{{ paper.title }}</b></a>
+		{% else %}
+			<b>{{ paper.title }}</b>
+		{% endif %}
+		<br>
+		<small>
+			{% if paper.biographies %}
+				{% assign author_names = paper.biographies | map: "name" %}
+				{{ author_names | join: ", " }}
+				<br>
+			{% endif %}
+			
+			{% if paper.website %}
+			<b>Website:</b> {% if paper.website != 'TBA' %}<a href="{{ paper.website }}">{{ paper.website }}</a>{% else %}TBA{% endif %}<br>
+			{% endif %}
+
+			{% if paper.start_at %}
+			<b>Time:</b> <span data-start-at="{{ paper.start_at | date_to_xmlschema }}" data-end-at="{{ paper.end_at | date_to_xmlschema }}">{{ paper.start_at | to_utc_time_range: paper.end_at }}</span><br>
+			{% endif %}
+
+			{% if paper.organizers %}
+				<b>Organizers:</b>
+				<ul style="padding-left: 18px;">
+				{% for organizer in paper.organizers %}
+					<li>{{ organizer }}</li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+		</small>
+	</li>
+	{% endfor %}
+</ul>
+{% else %}
+<p>Under Construction</p>
+{% endif %}
+</div>
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function() {
+		var list = document.getElementById('paper-list');
+		formatScheduleAndShowTimeZoneAndSelect(list, { type: 'list' });
+	}, false);
+</script>

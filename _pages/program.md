@@ -1,6 +1,7 @@
 ---
 permalink: /program/
 title: Program
+classes: wide
 ---
 
-Under Construction
+{% include program.html %}

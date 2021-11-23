@@ -1,6 +1,7 @@
 ---
 permalink: /workshops/
 title: Workshops
+classes: wide
 ---
 
-Under Construction
+{% include tutorial.html papers=site.data.workshops %}

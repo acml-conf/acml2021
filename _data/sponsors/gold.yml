@@ -1,0 +1,8 @@
+- name: CSIRO
+  url: https://data61.csiro.au/
+  image: CSIRO.jpg
+  text: '[Career Opportunities](https://www.csiro.au/en/careers/career-opportunities/data61-careers){:target="_blank"}'
+
+- name: Appier
+  url: https://www.appier.com/
+  image: Appier.png

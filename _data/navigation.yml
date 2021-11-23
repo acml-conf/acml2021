@@ -1,8 +1,12 @@
 main:
   - title: "News"
     url: /news/
+  - title: "Virtual Conference"
+    url: https://virtual-acml.org/
   - title: "Calls"
     sublinks: 'calls'
+  - title: "Participants"
+    sublinks: 'participants'
   - title: "Program"
     url: /program/
   - title: "Conference"
@@ -31,6 +35,14 @@ calls:
       url: /calls/workshops/
     - title: "Nominations"
       url: /calls/nominations/
+
+participants:
+  - title: "Participants"
+    children:
+    - title: "Registration"
+      url: /participants/registration/
+    - title: "Author"
+      url: /participants/author/
 
 conference:
   - title: "Conference"
@@ -61,5 +73,9 @@ oamls:
     children:
     - title: "Home"
       url: /school/
-    - title: "Speakers"
-      url: /school/speakers/
+    - title: "Schedule"
+      url: /school/schedule/
+    - title: "Call for Applications"
+      url: /school/call-for-applications/
+    # - title: "Frequently Asked Questions"
+    #   url: /school/faq/

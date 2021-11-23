@@ -1,0 +1,7 @@
+code: 6A
+title: Federated Learning and Transfer Learning
+papers:
+  - "Regularized Mutual Learning for Personalized Federated Learning"
+  - "On the benefits of representation regularization in invariance based domain generalization"
+  - "Transfer Learning with Adaptive Online TrAdaBoost for Data Streams"
+  - "Domain Adaptive YOLO for One-Stage Cross-Domain Detection"

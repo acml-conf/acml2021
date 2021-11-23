@@ -5,7 +5,7 @@
 			<a href="{{ paper.authors | slugify }}">{{ paper.title }}</a><br>
 			<small><b>{{ paper.authors }}</b> - {{ paper.affiliation }}</small>
 		</h2>
-		<img src="{{ paper.photo | prepend:'/assets/images/speakers/' | relative_url }}" alt="image-left" class="align-left" style="max-width: 150px">
+		<img src="{{ paper.photo | prepend:'/assets/images/speakers/' | relative_url }}" alt="{{ paper.authors }}" class="{% if paper.abstract %}align-left{% endif %}" style="max-width: 150px">
 		{{ paper.abstract }}<br>
 	{% endfor %}
 {% else %}

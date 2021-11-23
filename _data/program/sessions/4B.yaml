@@ -1,0 +1,10 @@
+code: 4B
+title: Reinforcement Learning
+papers:
+      - "Improve Generated Adversarial Imitation Learning with Reward Variance Regularization"
+      - "Cautious Actor-Critic"
+      - "Geometric Value Iteration: Dynamic Error-Aware KL Regularization for Reinforcement Learning"
+      - "Robust Model-based Reinforcement Learning for Autonomous Greenhouse Control"
+      - "Modeling Risky Choices in Unknown Environments"
+      - "Multi-task Actor-Critic with Knowledge Transfer via a Shared Critic"
+      - "Learning to Switch Optimizers for Quadratic Programming"

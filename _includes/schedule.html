@@ -1,0 +1,30 @@
+<div id="schedule">
+{% assign sessions = include.schedule | sort: 'end_at' %}
+
+<table style="width:100%; display: table;" id="session-lists">
+	<thead>
+		<tr>
+			<th>Session</th>
+			<th>Speaker</th>
+			<th>Title</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for session in sessions %}
+		<tr>
+			<td data-start-at="{{ session.start_at | date_to_xmlschema }}" data-end-at="{{ session.end_at | date_to_xmlschema }}">{{ session.start_at | to_utc_time_range: session.end_at }}</td>
+			<td>{{ session.speaker }}</td>
+			<td>{% if session.title %}{{ session.title }}{% else %}{{ session.topic }} (tentative){% endif %}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+</div>
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function() {
+		var table = document.getElementById('session-lists');
+		formatScheduleAndShowTimeZoneAndSelect(table);
+	}, false);
+</script>

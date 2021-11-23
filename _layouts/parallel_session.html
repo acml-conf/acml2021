@@ -1,0 +1,17 @@
+---
+layout: single
+classes: wide
+sidebar:
+  nav: "conference"
+comments: false
+---
+
+<ul>
+{% for paper_title in page.papers %}
+	<li>
+	{% assign paper = site.data.papers.conference | concat: site.data.papers.journal | where: "title", paper_title | first %}
+	<a href="{{ paper.paper_id | prepend:'/conference/accepted-papers/' | relative_url }}"><b>{{ paper.title }}</b><br></a>
+	{{ paper.authors }}
+	</li>
+{% endfor %}
+</ul>

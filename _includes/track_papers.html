@@ -5,7 +5,6 @@
 		<a href="{% if paper.paper_id %}{{ paper.paper_id }}{% else %}{{ paper.authors | slugify }}{% endif %}"><b>{{ paper.title }}</b></a><br>
 		<small>
 		{{ paper.authors }}
-		{% if paper.affiliation %} - {{ paper.affiliation }}{% endif %}
 		{% if paper.website %} | <a href="{{ paper.website }}">Website</a>{% endif %}
 		</small>
 	</li>

@@ -1,0 +1,11 @@
+code: 2A
+title: Deep Reinforcement Learning
+papers:
+  - "BRAC+: Improved Behavior Regularized Actor Critic for Offline Reinforcement Learning"
+  - "Dynamic Coordination Graph for Cooperative Multi-Agent Reinforcement Learning"
+  - "CTS2: Time Series Smoothing with Constrained Reinforcement Learning"
+  - "Language Representations for Generalization in Reinforcement Learning"
+  - "Meta-Model-Based Meta-Policy Optimization"
+  - "ContriQ: Ally-Focused Cooperation and Enemy-Concentrated Confrontation in Multi-Agent Reinforcement Learning"
+  - "Robust Domain Randomised Reinforcement Learning through Peer-to-Peer Distillation"
+  - "Learning 3-opt heuristics for traveling salesman problem via deep reinforcement learning"

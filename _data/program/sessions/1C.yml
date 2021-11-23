@@ -1,0 +1,10 @@
+code: 1C
+title: Optimization
+papers:
+  - "Fast Rate Learning in Stochastic First Price Bidding"
+  - "Bayesian Optimization with Partially Specified Queries"
+  - "Skew-symmetrically perturbed gradient flow for convex optimization"
+  - "Maximization of Monotone k-Submodular Functions with Bounded Curvature and Non-k-Submodular Functions"
+  - "The Power of Factorial Powers: New Parameter settings for (Stochastic) Optimization"
+  - "Vector Transport Free Riemannian LBFGS for Optimization on Symmetric Positive Definite Matrix Manifolds"
+  - "An online semi-definite programming with a generalised log-determinant regularizer and its applications"

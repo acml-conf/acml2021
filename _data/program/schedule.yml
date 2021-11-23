@@ -1,0 +1,75 @@
+- start_at: '2021-11-18 09:00:00 +08:00'
+  end_at: '2021-11-18 10:00:00 +08:00'
+  speaker: Tong Zhang
+
+- title: "Parallel Session 1"
+  start_at: '2021-11-18 10:00:00 +08:00'
+  end_at: '2021-11-18 12:00:00 +08:00'
+  sessions:
+    - 1A
+    - 1B
+    - 1C
+
+- title: "Parallel Session 2"
+  start_at: '2021-11-18 12:30:00 +08:00'
+  end_at: '2021-11-18 14:30:00 +08:00'
+  sessions:
+    - 2A
+    - 2B
+    - 2C
+
+- title: "Parallel Session 3"
+  start_at: '2021-11-18 15:00:00 +08:00'
+  end_at: '2021-11-18 17:00:00 +08:00'
+  sessions:
+    - 3A
+    - 3B
+    - 3C
+
+- start_at: '2021-11-18 17:00:00 +08:00'
+  end_at: '2021-11-18 18:00:00 +08:00'
+  speaker: Johan Suykens
+
+- title: "Poster Session 1"
+  start_at: '2021-11-18 18:00:00 +08:00'
+  end_at: '2021-11-18 20:00:00 +08:00'
+
+- title: "Poster Session 2"
+  start_at: '2021-11-19 07:00:00 +08:00'
+  end_at: '2021-11-19 09:00:00 +08:00'
+
+- title: "Parallel Session 4"
+  start_at: '2021-11-19 09:00:00 +08:00'
+  end_at: '2021-11-19 11:00:00 +08:00'
+  sessions:
+    - 4A
+    - 4B
+    - 4C
+
+- start_at: '2021-11-19 11:30:00 +08:00'
+  end_at: '2021-11-19 12:30:00 +08:00'
+  speaker: Balaraman Ravindran
+
+- title: "Parallel Session 5"
+  start_at: '2021-11-19 12:30:00 +08:00'
+  end_at: '2021-11-19 14:30:00 +08:00'
+  sessions:
+    - 5A
+    - 5B
+    - 5C
+
+- title: "Parallel Session 6"
+  start_at: '2021-11-19 15:00:00 +08:00'
+  end_at: '2021-11-19 17:00:00 +08:00'
+  sessions:
+    - 6A
+    - 6B
+    - 6C
+
+- start_at: '2021-11-19 17:00:00 +08:00'
+  end_at: '2021-11-19 18:00:00 +08:00'
+  speaker: Sarit Kraus
+
+- title: "Poster Session 3"
+  start_at: '2021-11-19 18:00:00 +08:00'
+  end_at: '2021-11-19 20:00:00 +08:00'

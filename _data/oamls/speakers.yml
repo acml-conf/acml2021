@@ -18,11 +18,6 @@
   photo: sinno-pan.jpg
   url: https://personal.ntu.edu.sg/sinnopan/
 
-- name: Sara Hooker
-  desc: Google Brain
-  photo: sara-hooker.jpg
-  url: https://www.sarahooker.me/
-
 - name: Vered Shwartz
   desc: University of British Columbia
   photo: vered-shwartz.jpg
@@ -38,10 +33,10 @@
   photo: hung-yi-lee.jpg
   url: https://speech.ee.ntu.edu.tw/~hylee/
 
-- name: Dinh Phung
-  desc: Monash University
-  photo: dinh-phung.jpg
-  url: http://dinhphung.ml/?i=1
+- name: Nhat Ho
+  desc: University of Texas at Austin
+  photo: nhat-ho.jpg
+  url: https://nhatptnk8912.github.io/
     
 - name: Reza Haffari
   desc: Monash University
@@ -52,3 +47,18 @@
   desc: Data61, CSIRO
   photo: cheng-soon-ong.jpg
   url: http://www.ong-home.my/
+
+- name: Jonas Peters
+  desc: University of Copenhagen 
+  photo: jonas-peters.jpg
+  url: http://web.math.ku.dk/~peters/
+
+- name: Cheng-Te Li
+  desc: National Cheng Kung University
+  photo: cheng-te-li.jpg
+  url: http://myweb.ncku.edu.tw/~chengte/
+
+- name: Zhongwen Xu
+  desc: Sea AI Lab
+  photo: zhongwen-xu.jpg
+  url: https://zhongwen.one/

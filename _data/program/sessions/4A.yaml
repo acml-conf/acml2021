@@ -1,0 +1,12 @@
+code: 4A
+title: Architectures of Deep Networks
+papers:
+  - "CMD: Controllable Matrix Decomposition with Global Optimization for Deep Neural Network Compression"
+  - "Multi-stream based Marked Point Process"
+  - "NAS-HPO-Bench-II: A Benchmark Dataset on Joint Optimization of Convolutional Neural Network Architecture and Training Hyperparameters"
+  - "DDSAS: Dynamic and Differentiable Space-Architecture Search"
+  - "S2TNet: Spatio-Temporal Transformer Networks for Trajectory Prediction in Autonomous Driving"
+  - "Video Action Recognition with Neural Architecture Search"
+  - "Feature Convlutional Networks"
+  - "Multi-Branch Network for Cross-Subject EEG-based Emotion Recognition"
+  - "Greedy Search Algorithm for Mixed Precision in Post-Training Quantization of Convolutional Neural Network Inspired by Submodular Optimization"

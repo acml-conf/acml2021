@@ -1,0 +1,11 @@
+code: 5A
+title: Bandit and Online Learning
+papers:
+  - "Speaker Diarization as a Fully Online Bandit Learning Problem in MiniVox"
+  - "Improving Kernel Online Learning with a Snapshot Memory"
+  - "Online Strongly Convex Optimization with Unknown Delays"
+  - "Worst-case Regret Analysis of Computationally Budgeted Online Kernel Selection"
+  - "Lifelong Learning with Sketched Structural Regularization"
+  - "Expert advice problem with noisy low rank loss"
+  - "Lifelong Learning with Branching Experts"
+  - "An Aligned Subgraph Kernel Based on Discrete-Time Quantum Walk"

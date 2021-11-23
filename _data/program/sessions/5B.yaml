@@ -1,0 +1,9 @@
+code: 5B
+title: Bayesian Model
+papers:
+  - "Bayesian Inference for Optimal Transport with Stochastic Cost"
+  - "Bayesian nonparametric model for arbitrary cubic partitioning"
+  - "Improving Gaussian mixture latent variable model convergence with Optimal Transport"
+  - "On the Convex Combination of Determinantal Point Processes"
+  - "Scalable gradient matching based on state space Gaussian Processes"
+  - "Augmenting Imbalanced Time-series Data via Adversarial Perturbation in Latent Space"

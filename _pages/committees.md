@@ -62,3 +62,11 @@ classes: wide
 * Nan Lu, University of Tokyo
 * Ngan Vu, DeepMind
 * Dani Yogatama, DeepMind
+
+### Admin and Technical Team
+* Maybelline Goh
+* Ho Siew Foong
+* Irene Ong
+* Sze Eng Koon
+* Tan Wei Han
+* Teo Pei Pei

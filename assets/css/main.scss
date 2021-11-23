@@ -196,7 +196,13 @@ up {
 .sponsors {
     text-align: center;
 
-    img {
-        margin: 0px 32px 32px 0px
+
+    .sponsor {
+        display: inline-block;
+        margin: 0px 32px 0px 0px;
     }
+}
+
+.mfp-iframe-holder .mfp-content {
+    height: 100%;
 }

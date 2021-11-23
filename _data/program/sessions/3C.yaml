@@ -1,0 +1,12 @@
+code: 3C
+title: Learning with Uneven Data
+papers:
+  - "Switching: Understanding the Class-reversed Sampling in Tail Sample Memorization"
+  - "Uplift Modeling with High Class Imbalance"
+  - "Learn to Predict Vertical Track Irregularity with Extremely Imbalanced Data"
+  - "ExNN-SMOTE: Extended Natural Neighbors Based SMOTE to Deal with Imbalanced Data"
+  - "Building Decision Tree for Imbalanced Classification via Deep Reinforcement Learning"
+  - "Penalty Method for Inversion-Free Deep Bilevel Optimization"
+  - "A Partial Label Metric Learning Algorithm for Class Imbalanced Data"
+  - "Asymptotically Exact and Fast Gaussian Copula Models for Imputation of Mixed Data Types"
+  - "Bayesian Latent Factor Model for Higher-order Data"

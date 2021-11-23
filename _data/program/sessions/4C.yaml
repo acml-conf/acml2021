@@ -1,0 +1,12 @@
+code: 4C
+title: Graph Learning
+papers:
+  - "The Flowing Nature Matters: Feature Learning from the Control Flow Graph of Source Code for Bug Localization"
+  - "DAGSurv: Directed Ayclic Graph Based Survival Analysis Using Deep Neural Networks"
+  - "Quaternion Graph Neural Networks"
+  - "K2-GNN: Multiple Users’ Comments Integration with Probabilistic K-Hop Knowledge Graph Neural Networks"
+  - "Convolutional Hypercomplex Embeddings for Link Prediction"
+  - "Metric Learning for comparison of HMMs using Graph Neural Networks"
+  - "Perturbing Eigenvalues with Residual Learning in Graph Convolutional Neural Networks"
+  - "Time-Constrained MAPF in Non-Lattice Graphs with DRL]{Time-Constrained Multi-Agent Path Finding in Non-Lattice Graphs with Deep Reinforcement Learning"
+  - "Bayesian neural network unit priors and generalized Weibull-tail property"

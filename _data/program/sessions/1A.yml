@@ -1,0 +1,11 @@
+code: 1A
+title: Trustworthy Machine Learning
+papers:
+  - "Generating Deep Networks Explanations with Robust Attribution Alignment"
+  - "Bias-Tolerant Fair Classification"
+  - "PFedAtt: Attention-based Personalized Federated Learning on Heterogeneous Clients"
+  - "Beyond L_p clipping: Equalization based Psychoacoustic Attacks against ASRs"
+  - "A Causal Approach for Unfair Edge Prioritization and Discrimination Removal"
+  - "Fairness constraint of Fuzzy C-means Clustering improves clustering fairness"
+  - "A Mutual Information Regularization for Adversarial training"
+  - "Calibrated Adversarial Training"

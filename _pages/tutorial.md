@@ -1,6 +1,7 @@
 ---
 permalink: /tutorials/
 title: Tutorials
+classes: wide
 ---
 
-{% include track_papers.html papers=site.data.tutorials %}
+{% include tutorial.html papers=site.data.tutorials link=true %}

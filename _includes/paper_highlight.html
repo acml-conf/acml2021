@@ -1,0 +1,4 @@
+{% assign paper = site.data.papers.conference | concat: site.data.papers.journal | where: "paper_id", include.paper_id | first %}
+
+<b><a href="{{ paper.paper_id | prepend:'/conference/accepted-papers/' | relative_url }}"> {{ paper.title }}</a></b><br>
+{{ paper.authors }}

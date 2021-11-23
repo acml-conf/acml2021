@@ -1,0 +1,10 @@
+code: 2C
+title: Clustering and Unsupervised Learning
+papers:
+  - "h-DBSCAN: A simple fast DBSCAN algorithm for big data"
+  - "Multiple Partitions Alignment via Spectral Rotation"
+  - "Multi-view Latent Subspace Clustering based on both Global and Local Structure"
+  - "Deep Structural Contrastive Subspace Clustering"
+  - "Scaling Average-Linkage via Sparse Cluster Embeddings"
+  - "Unsupervised cycle-consistent network for removing susceptibility artifacts in single-shot EPI"
+  - "Contrastive Neural Processes for Self-Supervised Learning"

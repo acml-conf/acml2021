@@ -1,0 +1,9 @@
+code: 6B
+title: Generative Models
+papers:
+  - "Sinusoidal Flow: A Fast Invertible Autoregressive Flow"
+  - "Exposing Cyber-Physical System Weaknesses by Implicitly Learning their Underlying Models"
+  - "Encoder-decoder-based image transformation approach for integrating precipitation forecasts"
+  - "Multi-scale Salient Instance Segmentation based on Encoder-Decoder"
+  - "CTAB-GAN: Effective Table Data Synthesizing"
+  - "Expressive Neural Voice Cloning"

@@ -1,0 +1,71 @@
+<div id="schedule">
+
+{% assign sessions = site.data.tutorials | concat: site.data.workshops | concat: site.data.program.schedule | sort: 'start_at' %}
+
+<table style="width:100%; display: table;" id="session-lists">
+	<thead>
+		<tr>
+			<th>Time</th>
+			<th>Event</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for session in sessions %}
+		<tr>
+			<td data-start-at="{{ session.start_at | date_to_xmlschema }}" data-end-at="{{ session.end_at | date_to_xmlschema }}">{{ session.start_at | to_utc_time_range: session.end_at }}</td>
+			<td>
+				{% if session.biographies %}
+					<b>Tutorial: 
+					<a href="{{ session.title | slugify | prepend:'/tutorials/' | relative_url }}">{{ session.title }}</a></b>
+				{% elsif session.speaker %}
+					<b>Invited Talk: 
+					{% assign talk = site.data.speakers | where: "authors", session.speaker | first %}
+					<a href="{{ session.speaker | slugify | prepend:'/conference/invited-speakers/' | relative_url }}">
+					{% if talk.title %}
+						{{ talk.title }}
+					{% else %}
+						TBA
+					{% endif %}</a></b>
+				{% elsif session.website %}
+					<b>Workshop: {{ session.title }}</b>
+				{% else %}
+					<b>{{ session.title }}</b>
+				{% endif %}<br>
+
+				{% if session.biographies %}
+					{% assign author_names = session.biographies | map: "name" %}
+					{{ author_names | join: ", " }}<br>
+				{% endif %}
+
+				{% if session.website %}
+					{% if session.website != 'TBA' %}<a href="{{ session.website }}">{{ session.website }}</a>{% else %}TBA{% endif %}<br>
+				{% endif %}
+
+				{% if session.sessions %}
+				<ul>
+				{% for psession in session.sessions %}
+					<li>
+						<a href="{{ psession | slugify | prepend:'/conference/parallel-sessions/' | relative_url }}">{{ psession }}:
+						{{ site.data.program.sessions[psession].title }}</a>
+					</li>
+				{% endfor %}
+				</ul>
+				{% endif %}
+
+
+				{% if session.speaker %}
+					{{ session.speaker }}
+				{% endif %}
+			</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function() {
+		var table = document.getElementById('session-lists');
+		formatScheduleAndShowTimeZoneAndSelect(table);
+	}, false);
+</script>

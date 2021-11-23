@@ -64,6 +64,8 @@ search: false
 # paginate: 5
 
 after_footer_scripts:
+  - /assets/js/luxon.min.js 
+  - /assets/js/tz-select.js  
   - /assets/js/custom.js
 
 repository: acml-conf/acml2021
@@ -114,8 +116,13 @@ page_gen:
 # _data/tutorials
 - data: 'tutorials'
   template: 'paper/tutorial'
-  name: 'authors'
+  name: 'title'
   dir: 'tutorials'
+# _data/program/sessions
+- data: 'program.sessions'
+  template: 'parallel_session'
+  name: 'code'
+  dir: 'conference/parallel-sessions'
 
 
 ###################################################
@@ -150,6 +157,15 @@ defaults:
       toc_sidebar: true
       sidebar:
         nav: "calls"
+  # _pages/participants
+  - scope:
+      path: "_pages/participants"
+      type: pages
+    values:
+      classes: wide
+      toc_sidebar: true
+      sidebar:
+        nav: "participants"
   # _pages/conference
   - scope:
       path: "_pages/conference"
@@ -158,6 +174,19 @@ defaults:
       classes: wide
       sidebar:
         nav: "conference"
+  # _pages/oamls
+  - scope:
+      path: "_pages/oamls"
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      header:
+        overlay_color: "#000"
+        overlay_filter: "0.5"
+        overlay_image: /assets/images/online-learning.jpg
+        caption: "Photo by [**Scott Graham**](https://unsplash.com/@homajob) on [Unsplash](https://unsplash.com/photos/5fNmWej4tAA)"
+      excerpt: The Online Asian Machine Learning School (OA<up>M</up>LS). 
         
 
 # Exclude from processing.

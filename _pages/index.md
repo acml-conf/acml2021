@@ -41,3 +41,7 @@ The conference calls for high-quality, original research papers in the theory an
 ## Platinum Sponsors
 
 {% include sponsors.html category='platinum' %}
+
+## Gold Sponsors
+
+{% include sponsors.html category='gold' %}
