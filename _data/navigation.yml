@@ -1,8 +1,6 @@
 main:
   - title: "News"
     url: /news/
-  - title: "Virtual Conference"
-    url: https://virtual-acml.org/
   - title: "Calls"
     sublinks: 'calls'
   - title: "Participants"

@@ -3,6 +3,6 @@ permalink: /conference/accepted-papers/
 title: Accepted Papers
 ---
 
-Conference papers will soon be available on PMLR.
+Video presentations of the papers can be found on [SlidesLive](https://slideslive.com/acml-2021/research-papers).
 
 {% include papers.html %}
