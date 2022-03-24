@@ -14,7 +14,24 @@
 		<tr>
 			<td data-start-at="{{ session.start_at | date_to_xmlschema }}" data-end-at="{{ session.end_at | date_to_xmlschema }}">{{ session.start_at | to_utc_time_range: session.end_at }}</td>
 			<td>{{ session.speaker }}</td>
-			<td>{% if session.title %}{{ session.title }}{% else %}{{ session.topic }} (tentative){% endif %}</td>
+			<td>
+				{% if session.title %}{% assign title = session.title %}{% else %}{% assign title = session.topic | append: ' (tentative)' %}{% endif %}
+				{% if session.url %}
+					{% case session.url.size %}
+						{% when 1 %}
+							<a href="{{ session.url | first }}" target="_blank"> {{ title }} </a>
+						{% when 0 %}
+							{{ title }}
+						{% else %}
+							{{ title }}
+							{% for url in session.url %}
+								<a href="{{ url }}" target="_blank"> {{ "video" | append: forloop.index }} </a>
+							{% endfor %}
+					{% endcase %}
+				{% else %}
+					{{ title }}
+				{% endif %}
+			</td>
 		</tr>
 		{% endfor %}
 	</tbody>

@@ -1,0 +1,173 @@
+- end_at: '2021-11-09 16:00:00 +08:00'
+  speaker: Emtiyaz Khan
+  start_at: '2021-11-09 14:00:00 +08:00'
+  title: Machine Learning from a Bayesian Perspective
+  topic: Bayesian Machine Learning
+  url: 
+    - https://youtu.be/t6RjVxXJKsE
+- end_at: '2021-11-10 16:00:00 +08:00'
+  speaker: Emtiyaz Khan
+  start_at: '2021-11-10 14:00:00 +08:00'
+  title: Machine Learning from a Bayesian Perspective
+  topic: Bayesian Machine Learning
+  url: 
+    - https://youtu.be/9_lEMtnd874
+- end_at: '2021-11-11 18:00:00 +08:00'
+  speaker: Jonas Peters, Sorawit Saengkyongam
+  start_at: '2021-11-11 16:00:00 +08:00'
+  title: Causality and Distributional Robustness
+  topic: Causality
+  url: 
+    - https://youtu.be/I4K6jSi1Vto
+- end_at: '2021-11-12 18:00:00 +08:00'
+  speaker: Jonas Peters, Sorawit Saengkyongam
+  start_at: '2021-11-12 16:00:00 +08:00'
+  title: Causality and Distributional Robustness
+  topic: Causality
+  url: 
+    - https://youtu.be/ZhtCRbELlMM
+- end_at: '2021-11-11 11:00:00 +08:00'
+  speaker: Cheng-Te Li
+  start_at: '2021-11-11 10:00:00 +08:00'
+  title: Graph Representation Learning and Its Applications
+  topic: Graph Learning
+  url: 
+    - https://slideslive.com/38970371
+- end_at: '2021-11-11 13:00:00 +08:00'
+  speaker: Cheng-Te Li
+  start_at: '2021-11-11 11:00:00 +08:00'
+  title: Graph Representation Learning and Its Applications
+  topic: Graph Learning
+  url: 
+    - https://slideslive.com/38970371
+- end_at: '2021-11-12 16:00:00 +08:00'
+  speaker: Hung-yi Lee
+  start_at: '2021-11-12 14:00:00 +08:00'
+  title: Self-supervised Learning and its applications to Human Language Processing
+  topic: Unsupervised/Meta Learning
+  url: 
+    - https://youtu.be/QTlsNoV7MQM
+- end_at: '2021-11-15 13:00:00 +08:00'
+  speaker: Hung-yi Lee
+  start_at: '2021-11-15 11:00:00 +08:00'
+  title: Meta Learning and its applications to Human Language Processing
+  topic: Unsupervised/Meta Learning
+  url: 
+    - https://youtu.be/dI8zl1-TYv0
+- end_at: '2021-11-09 11:00:00 +08:00'
+  speaker: Reza Haffari
+  start_at: '2021-11-09 9:00:00 +08:00'
+  title: Machine Learning for NLP
+  topic: Machine Learning for NLP
+  url: 
+    - https://youtu.be/aBGOb4akU-E
+- end_at: '2021-11-11 16:00:00 +08:00'
+  speaker: Sinno Pan
+  start_at: '2021-11-11 14:00:00 +08:00'
+  title: Transfer Learning
+  topic: Transfer Learning
+  url: 
+    - https://youtu.be/9UiKV2i1TPM
+- end_at: '2021-11-15 11:00:00 +08:00'
+  speaker: Taiji Suzuki
+  start_at: '2021-11-15 9:00:00 +08:00'
+  title: Deep Learning Theory and Optimization
+  topic: Optimization Theory
+  url: 
+    - https://youtu.be/7vlDDK5PBFs
+- end_at: '2021-11-16 16:00:00 +08:00'
+  speaker: Taiji Suzuki
+  start_at: '2021-11-16 14:00:00 +08:00'
+  title: Deep Learning Theory and Optimization
+  topic: Optimization Theory
+  url: 
+    - https://youtu.be/kzYKzjnxm7g
+- end_at: '2021-11-15 16:00:00 +08:00'
+  speaker: Zhongwen Xu
+  start_at: '2021-11-15 14:00:00 +08:00'
+  title: Reinforcement Learning
+  topic: Reinforcement Learning
+  url: 
+    - https://youtu.be/xhz7NcPlcOc
+- end_at: '2021-11-16 18:00:00 +08:00'
+  speaker: Zhongwen Xu
+  start_at: '2021-11-16 16:00:00 +08:00'
+  title: Reinforcement Learning
+  topic: Reinforcement Learning
+  url: 
+    - https://youtu.be/FvJBN7Dbqiw
+- end_at: '2021-11-08 13:00:00 +08:00'
+  speaker: Cheng Soon Ong
+  start_at: '2021-11-08 11:00:00 +08:00'
+  title: Computational Biology
+  topic: Computational Biology
+  url: 
+    - https://youtu.be/zWKfcdIgKXA
+- end_at: '2021-11-09 13:00:00 +08:00'
+  speaker: Cheng Soon Ong
+  start_at: '2021-11-09 11:00:00 +08:00'
+  title: Computational Biology
+  topic: Computational Biology
+  url: 
+   - https://youtu.be/UmrQQYpCSls
+   - https://youtu.be/bp75zoRzir4
+- end_at: '2021-11-08 16:00:00 +08:00'
+  speaker: Angela Yao
+  start_at: '2021-11-08 14:00:00 +08:00'
+  title: Machine Learning for Computer Vision
+  topic: Machine Learning for Computer Vision
+  url: []
+- end_at: '2021-11-08 18:00:00 +08:00'
+  speaker: Angela Yao
+  start_at: '2021-11-08 16:00:00 +08:00'
+  title: Machine Learning for Computer Vision
+  topic: Machine Learning for Computer Vision
+  url: []
+- end_at: '2021-11-16 11:00:00 +08:00'
+  speaker: Vered Shwartz
+  start_at: '2021-11-16 9:00:00 +08:00'
+  title: Commonsense Reasoning in Natural Language Processing
+  topic: Commonsense Learning
+  url: 
+    - https://youtu.be/YaxM9tvItDs
+- end_at: '2021-11-16 13:00:00 +08:00'
+  speaker: Vered Shwartz
+  start_at: '2021-11-16 11:00:00 +08:00'
+  title: Commonsense Reasoning in Natural Language Processing
+  topic: Commonsense Learning
+  url: 
+    - https://youtu.be/YaxM9tvItDs
+- end_at: '2021-11-10 13:00:00 +08:00'
+  speaker: Nhat Ho
+  start_at: '2021-11-10 11:00:00 +08:00'
+  title: Optimal Transport
+  topic: Optimal Transport
+  url: 
+    - https://youtu.be/fPBfxHCLU34
+- end_at: '2021-11-12 11:00:00 +08:00'
+  speaker: Peter Bartlett
+  start_at: '2021-11-12 9:00:00 +08:00'
+  title: Generalization Theory
+  topic: Generalization Theory
+  url: 
+    - https://youtu.be/Wr2yvPPIk6k
+- end_at: '2021-11-12 13:00:00 +08:00'
+  speaker: Peter Bartlett
+  start_at: '2021-11-12 11:00:00 +08:00'
+  title: Generalization Theory
+  topic: Generalization Theory
+  url: 
+    - https://youtu.be/Wr2yvPPIk6k
+- end_at: '2021-11-08 10:30:00 +08:00'
+  speaker: Wee Sun Lee
+  start_at: '2021-11-08 09:30:00 +08:00'
+  title: Introduction and Ice Breaker
+  topic: ''
+  url: []
+- end_at: '2021-11-10 10:30:00 +08:00'
+  speaker: "H\u01B0ng B\xF9i, Wray Buntine, Wittawat Jitkrittum, Wee Sun Lee, Nan\
+    \ Lu, Ng\xE2n V\u0169"
+  start_at: '2021-11-10 09:30:00 +08:00'
+  title: Roundtable Discussion on Machine Learning Research
+  topic: ''
+  url: []
