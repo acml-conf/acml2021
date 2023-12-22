@@ -61,3 +61,6 @@ On Linux and macOS, deployment of the website can also be done automatically usi
 #### Deploy
 
 Execute: ``./deploy.sh``. This will build the website and synchronize the latest changes made by Jekyll to the server. Following the example of staging configuration, you can execute ``./deploy.sh staging`` to deploy to the staging server.
+
+# ACML 2022 Website
+https://github.com/JosephKJ/ACML-22
